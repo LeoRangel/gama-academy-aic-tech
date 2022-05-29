@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F1F1F1;
+  color: #010101;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  padding: 20px 0;
+}
+
+input,
+textarea,
+select {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.9);
+  background-color: white;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0;
+  border-radius: 0.25rem;
+}
+
+:is(input, textarea)::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+:is(input, textarea):-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+select {
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  background-position: calc(100% - 12px) center !important;
+  background: white url("data:image/svg+xml,<svg height='10px' width='10px' viewBox='0 0 16 16' fill='%23000000' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>") no-repeat;
+  /* padding: 8px 32px 8px 16px; */
+  padding-right: 10px;
+}
+
+select::-ms-expand {
+  /* To remove the arrow of select element in IE */
+  display: none;
+}
+
+:is(input, textarea, select):focus {
+  outline: none !important;
+  border: 1px solid blue !important;
+  box-shadow: 0px 0.4rem 0.4rem 0px rgba(0, 0, 0, 0.25);
+}
+
+input[type=submit] {
+  background-color: blue;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  height: fit-content;
+}
+input[type=submit]:hover {
+  filter: brightness(0.8);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.navbar {
+  background-color: blue;
+  padding: 20px 0;
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  font-size: 1.25rem;
+}
+
+.rodape {
+  margin-top: auto;
+  padding: 20px 0;
+  background-color: #020202;
+  color: white;
+}
+
+.card {
+  max-width: 300px;
+  height: 400px;
+  padding: 2rem;
+  border-radius: 0.25rem;
+  background-color: gray;
+}
+.card .__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: "bold";
+  font-size: 24px;
+}
+.card .image {
+  max-width: 280px;
+  height: auto;
+}
+.card .button._danger {
+  padding: 2rem;
+  border-radius: 0.25rem;
+  background-color: red;
+  color: white;
+  transition: 0.3s;
+}
+.card .button._danger:hover {
+  background-color: orange;
+}
+.card .button._success {
+  padding: 2rem;
+  border-radius: 0.25rem;
+  background-color: green;
+  color: white;
+  transition: 0.3s;
+}
+.card .button._success:hover {
+  background-color: rgb(0, 207, 0);
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 400px;
+}
+
+/*# sourceMappingURL=style.css.map */

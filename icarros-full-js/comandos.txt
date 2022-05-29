@@ -1,0 +1,18 @@
+# Iniciar projeto
+
+npm init -y
+
+# Instalar babel e webpack
+
+npm i @babel/core @babel/plugin-transform-runtime @babel/polyfill -D
+
+npm i babel-core @babel/preset-env babel-loader babel-plugin-transform-runtime -D
+
+npm i webpack webpack-cli webpack-dev-server webpack-merge -D
+
+npm i clean-webpack-plugin -D
+
+# Instalar SASS na máquina de forma global
+
+https://sass-lang.com/install
+
