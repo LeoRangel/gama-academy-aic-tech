@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICarros HTML | Contato</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer type="module" src="js/contato.js"></script>
+  <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+ <body>
+  <header>
+    <div class="headercontainer">
+      <a href="index.html">
+        <img src="img/logo.png" class="logo" alt="Logo Marca">
+      </a>
+      <nav class="navcontent">
+        <a href="index.html">Home</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+    <div class="d_flex center_content section_contact">
+      <div>
+        <h1>Título 01</h1>
+        <p>Entre em contato conosco pelo formulário</p>
+      </div>
+    </div>
+
+    <!-- <form id="contact_form">
+      <h3> Entre em contato</h3>
+      <fieldset>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="user_name">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="user_email">
+        <label for="telephone">Telefone:</label>
+        <input type="telephone" id="phone" name="user_telephone">   
+      <label for="bio">Escreva sua mensagem:</label>
+        <textarea id="bio" name="message"></textarea>
+      </fieldset>
+      <button type="submit">Enviar mensagem :)</button>
+    </form> -->
+
+    <form id="mensagemForm" action="" method="post" enctype="multipart/form-data">
+
+      <div class="">
+        <label for="inputNome">
+          <span>
+            <strong>Nome</strong> (Requerido)
+          </span>
+          <input name="nome" type="text" id="inputNome" placeholder="Ex.: José Silva" required minlength='3'
+            maxlength='50' value="">
+        </label>
+      </div>
+
+      <div class="">
+        <label for="inputEmail">
+          <span>
+            <strong>E-mail</strong> (Requerido)
+          </span>
+          <input name="email" type="email" id="inputEmail" placeholder="Ex.: email@gmail.com" required
+            pattern="[^@]+@[^\.]+\..+" value="">
+        </label>
+      </div>
+
+      <div class="">
+        <label for="inputTelefone">
+          <span>
+            <strong>Telefone</strong> (Requerido)
+          </span>
+          <input name="telefone" type="phone" id="inputTelefone" placeholder="Ex.: (83) 90000-0000" required
+            value="">
+        </label>
+      </div>
+
+      <div class="">
+        <label for="inputMensagem">
+          <span>
+            <strong>Mensagem</strong> (Requerido)
+          </span>
+          <textarea name="mensagem" id="inputMensagem" rows="3" required maxlength='200' value=""></textarea>
+        </label>
+      </div>
+
+      <button type="submit" class="my-btn" name="enviar">
+        Enviar mensagem
+      </button>
+
+    </form>
+
+    <div id="loader" class="loader_inative">
+      <div class="loader_content">
+        <img src="img/loader.gif" alt="loader" class="loader_icon">
+      </div>
+    </div>
+  <footer>
+    <p>Todos os direitos reservados 2022</p>
+  </footer>
+  
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICarros HTML | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script defer type='module' src="js/home.js"></script>
+</head>
+<body>
+  <header>
+    <div class="headercontainer">
+      <a href="index.html">
+        <img src="img/logo.png" class="logo" alt="Logo Marca">
+      </a>
+      <nav class="navcontent">
+        <a href="index.html">Home</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="article_content p50">
+      <p class="p50" >Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss deixa as pessoas mais interessantis.Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.Não sou faixa preta cumpadi, sou preto inteiris, inteiris.Diuretics paradis num copo é motivis de denguis.</p>
+      <img src="img/mussum.webp" alt="mussum" class="img_article">
+    </div>
+  </div>
+
+  <div class="section red_bg d_flex center_content">
+    <div>
+      <div>
+        <form id="findapi">
+          <input type="text" id="getModel" placeholder="Informe o modelo desejado">
+          <div id="brands"></div>
+          <div id="parameters" class="d-flex color-black"></div>
+          <br>
+          <input class="my-btn" type="submit" value="pesquisar">
+        </form>
+        <button class="my-btn" onclick="qualquerCoisa()">Clique aqui</button>
+        <button class="my-btn" id="testeA">Teste</button>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <p>Todos os direitos reservados 2022</p>
+  </footer>
+  
+</body>
+</html>
