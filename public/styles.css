@@ -1,0 +1,118 @@
+/* Global styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Variáveis */
+
+:root {
+    /* Fontes */
+    --primary-font: 'Roboto', sans-serif;
+
+    --primary-color: #63dc3e;
+
+    /* Cores cinzas, para detalhes do site */
+    --gray-1: #25292dff;
+    --gray-2: #40474fff;
+    --gray-3: #65707bff;
+    --gray-4: #b0b8bfff;
+    --gray-5: #F1F2F3;
+
+    /* Paddings */
+    --pd-my-container: 0 var(--spacing-5);
+
+    /* Raios de borda */
+    --border-radius-1: .45rem;
+
+    /* Sombras */
+    --shadow-1: 0px .4rem .4rem 0px rgba(0, 0, 0, 0.25);
+}
+
+
+* {
+    margin: 0;
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    /* Fonte padrão */
+    font-family: var(--primary-font);
+    /* Tamanho de fonte padrão */
+    font-size: 16px;
+    /* Cor padrão de textos */
+    color: var(--gray-1);
+    background-color: var(--gray-5);
+    position: relative;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-position: inside;
+    margin-bottom: 0;
+}
+
+
+/* Container's */
+
+.my-container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: var(--pd-my-container);
+}
+
+.card-container {
+    background-color: #FFFFFF;
+    border-radius: var(--border-radius-1);
+    box-shadow: var(--shadow-1);
+    z-index: 99;
+    overflow: hidden;
+}
+
+.card-header {
+    padding: 2rem;
+    background-color: var(--primary-color);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+
+/* Section Projects List */
+
+#projectsList {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+#projectsList ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#projectsList ul li {
+    color: var(--gray-3);
+}
+
+#projectsList a {
+    color: var(--gray-3);
+    text-decoration: none;
+}
+
+#projectsList a:hover {
+    color: var(--gray-1);
+    text-decoration: underline;
+}

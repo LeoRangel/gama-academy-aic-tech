@@ -4,6 +4,6 @@
 
 ## Projetos
 
-- Projeto ICarros FULL JS
-- Projeto ICarros HTML e JS
 - Projeto ICarros HTML
+- Projeto ICarros HTML e JS
+- Projeto ICarros FULL JS
