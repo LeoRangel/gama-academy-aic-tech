@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  margin-top: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-position: inside;
+  margin-bottom: 0;
+}
+
+.red{
+  color: red;
+}
