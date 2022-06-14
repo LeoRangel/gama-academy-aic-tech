@@ -35,12 +35,12 @@ module.exports = merge( common, {
       }
     ]
   },
-  externals: {
-    react: 'React',
-    axios: 'axios',
-    'react-dom': 'ReactDOM',
-    'react-router-dom': 'ReactRouterDOM', 
-  },
+  // externals: {
+  //   react: 'React',
+  //   axios: 'axios',
+  //   'react-dom': 'ReactDOM',
+  //   'react-router-dom': 'ReactRouterDOM', 
+  // },
   plugins: [
     new HtmlWebpackPlugin({
       template: './template.prod.html'
@@ -49,7 +49,8 @@ module.exports = merge( common, {
       filename: 'main-bundle-[hash].css'
     }),
     new FaviconsWebpackPlugin({
-      logo: './public/favicon.jpeg'
+      logo: './public/favicon.jpeg',
+      outputPath: 'img'
     })
   ]
 })
