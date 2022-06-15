@@ -122,4 +122,19 @@ ul {
     display: flex;
     text-align: center;
     justify-content: center;
+    gap: 2px;
+    font-size: .9rem;
+}
+
+.link-github a {
+    color: var(--gray-1) !important;
+    text-decoration: none;
+}
+.link-github a:hover {
+    text-decoration: underline;
+}
+
+.link-github svg {
+    width: 1rem;
+    fill: var(--gray-1);
 }
